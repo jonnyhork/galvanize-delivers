@@ -8,6 +8,18 @@
   padding-top: 50px;
 }
 
+.navbar {
+  height: 120px;
+}
+
+.navbar-brand {
+  font-size: 30px;
+}
+
+.bg-dark {
+  background-color: #292c2f!important;
+}
+
 
 /* Pulse Shrink */
 
