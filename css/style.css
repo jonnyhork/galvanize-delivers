@@ -1,5 +1,5 @@
   .bg-overlay {
-    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(/img/dining-room.jpg);
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, -0.3)), url(/img/pizza-header.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -9,7 +9,7 @@
   }
 
   a.deco-none {
-    color: #f8f9fa !important;
+    color: #f8f9fa;
     text-decoration: none;
   }
 
@@ -22,7 +22,7 @@
   }
 
   .bg-dark {
-    background-color: #292c2f!important;
+    background-color: #292c2f;
   }
 
   .homeInfoSlide {
@@ -34,6 +34,17 @@
   .homeInfoIcon {
     font-size: 7em;
     margin-bottom: 10px;
+  }
+
+  .flex-container {
+    max-height: calc(100vh - 180px);
+    /*display: flex;*/
+    /*flex-flow: row wrap;*/
+    overflow-y: scroll;
+  }
+
+  .card {
+    margin: 10px auto 10px auto;
   }
   /* Pulse Shrink */
 
