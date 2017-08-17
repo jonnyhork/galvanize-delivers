@@ -44,14 +44,14 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-md-6 col-lg-8 col-sm-12 flex-container d-flex flex-wrap">
+      <div class="col-md-6 col-lg-8 col-sm-12 flex-container d-flex flex-wrap" id="menu">
         <div class="card" style="width: 20rem;">
           <img class="card-img-top" src="img/burger.jpg" alt="Card image cap">
           <div class="card-body">
             <h4 class="card-title">Classic Burger</h4>
             <p class="card-text">100% Grassfed Beef and all the ususal goodness.</p>
-            <h5>$10.00</h5>
-            <a href="#" class="btn btn-primary">ADD TO ORDER</a>
+            <h5 class="price">$9.99</h5>
+            <a href="#" data-value="9.99" class="btn btn-primary addToOrder">ADD TO ORDER</a>
           </div>
         </div>
         <div class="card" style="width: 20rem;">
@@ -59,8 +59,8 @@
           <div class="card-body">
             <h4 class="card-title">Smoked Ribs</h4>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <h5>$10.00</h5>
-            <a href="#" class="btn btn-primary">ADD TO ORDER</a>
+            <h5 class="price">$12.99</h5>
+            <a href="#" data-value="12.99" class="btn btn-primary addToOrder">ADD TO ORDER</a>
           </div>
         </div>
         <div class="card" style="width: 20rem;">
@@ -68,8 +68,8 @@
           <div class="card-body">
             <h4 class="card-title">Arugula Pizza</h4>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <h5>$10.00</h5>
-            <a href="#" class="btn btn-primary">ADD TO ORDER</a>
+            <h5 class="price">$11.99</h5>
+            <a href="#" data-value="11.99" class="btn btn-primary addToOrder">ADD TO ORDER</a>
           </div>
         </div>
         <div class="card" style="width: 20rem;">
@@ -77,8 +77,8 @@
           <div class="card-body">
             <h4 class="card-title">Gormet Burger</h4>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <h5>$10.00</h5>
-            <a href="#" class="btn btn-primary">ADD TO ORDER</a>
+            <h5 class="price">$12.99</h5>
+            <a href="#" data-value="12.99" class="btn btn-primary addToOrder">ADD TO ORDER</a>
           </div>
         </div>
         <div class="card" style="width: 20rem;">
@@ -86,8 +86,8 @@
           <div class="card-body">
             <h4 class="card-title">Szechuan Stirfry</h4>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <h5>$10.00</h5>
-            <a href="#" class="btn btn-primary">ADD TO ORDER</a>
+            <h5 class="price">$11.99</h5>
+            <a href="#" data-value="11.99" class="btn btn-primary addToOrder">ADD TO ORDER</a>
           </div>
         </div>
         <div class="card" style="width: 20rem;">
@@ -95,8 +95,8 @@
           <div class="card-body">
             <h4 class="card-title">Foraged Strawberry Basil Ice Cream</h4>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <h5>$10.00</h5>
-            <a href="#" class="btn btn-primary">ADD TO ORDER</a>
+            <h5 class="price">$5.99</h5>
+            <a href="#" data-value="5.99" class="btn btn-primary addToOrder">ADD TO ORDER</a>
           </div>
         </div>
       </div>
@@ -115,29 +115,23 @@
               <th>Price</th>
             </tr>
           </thead>
-          <tbody>
-            <tr>
-              <td colspan='5'>Smoked Ribs with the sides</td>
-              <td>$10.00</td>
-            </tr>
-            <tr>
-              <td colspan='5'>Classic Burger</td>
-              <td>$10.00</td>
-            </tr>
-            <tr>
-              <td colspan='5'>Pasta</td>
-              <td>$10.00</td>
-            </tr>
-            <tr>
-              <td colspan='5'>Arugala Pizza</td>
-              <td>$10.00</td>
-            </tr>
-            <tr>
-              <td colspan='5'>Gormet Burger</td>
-              <td>$10.00</td>
-            </tr>
-
+          <tbody class="checkout-list">
+            <!--Ordered Items-->
           </tbody>
+          <tfoot>
+            <tr>
+              <td colspan='5' class="text-right" style="padding-right:40px">Subtotal</td>
+              <td colspan='5' id="subtotal"></td>
+            </tr>
+            <tr>
+              <td colspan='5' class="text-right" style="padding-right:40px">Tax</td>
+              <td colspan='5' id='tax'></td>
+            </tr>
+            <tr>
+              <td colspan='5' class="text-right" style="padding-right:40px">Total</td>
+              <td colspan='5' id="total"></td>
+            </tr>
+          </tfoot>
         </table>
       </div>
     </div>
@@ -171,6 +165,7 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src='js/main.js'></script>
 </body>
 
 </html>
