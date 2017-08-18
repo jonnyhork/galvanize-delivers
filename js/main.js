@@ -1,4 +1,6 @@
 $(document).ready(function() {
+  "use strict";
+
   // Current CO Sales Tax is 2.9%
   let taxRate = 0.029
   let subTotal = 0
@@ -27,13 +29,26 @@ $(document).ready(function() {
     $('#total').text(`$${total.toFixed(2)}`)
   })
 
-
-
-
   console.log('subTotal= ', subTotal.toFixed(2));
   console.log("tax= ", tax.toFixed(2));
   console.log("total=", total.toFixed(2));
 
+  // FORM VALIDATION SCRIPT FROM BOOTSTRAP //
 
+  window.addEventListener("load", function() {
+    var form = document.getElementById("needs-validation");
+    form.addEventListener("submit", function(event) {
+      if (form.checkValidity() == false) {
+        event.preventDefault();
+        event.stopPropagation();
+      }
+      form.classList.add("was-validated");
+    }, false);
+  }, false);
 
-})
+  // SUBMIT ORDER //
+  $('.btn[name="place-order"]').click(function() {
+    alert(`Thanks for usign G[Deliveries]\nEnjoy Your Food!`)
+  })
+
+}) // DOCUMENT READY FUNCTION

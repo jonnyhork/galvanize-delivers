@@ -53,7 +53,7 @@
           <img class="card-img-top" src="img/burger.jpg" alt="Card image cap">
           <div class="card-body">
             <h4 class="card-title">Classic Burger</h4>
-            <p class="card-text">100% Grassfed Beef and all the ususal goodness.</p>
+            <p class="card-text">100% Grassfed Beef and all the ususal goodness. Wrapped up in a free-range Biroche Bun</p>
             <h5 class="price">$9.99</h5>
             <a href="#" data-value="9.99" class="btn btn-primary addToOrder">ADD TO ORDER</a>
           </div>
@@ -62,7 +62,7 @@
           <img class="card-img-top" src="img/ribs.jpg" alt="Card image cap">
           <div class="card-body">
             <h4 class="card-title">Smoked Ribs</h4>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <p class="card-text">Make sure you have plenty of napkins, these babies are finger-liking good. We brought Jimbo in from Carolina secret family recipe just to bring you a taste of heaven.</p>
             <h5 class="price">$12.99</h5>
             <a href="#" data-value="12.99" class="btn btn-primary addToOrder">ADD TO ORDER</a>
           </div>
@@ -71,7 +71,7 @@
           <img class="card-img-top" src="img/pizza.jpg" alt="Card image cap">
           <div class="card-body">
             <h4 class="card-title">Arugula Pizza</h4>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <p class="card-text">Made in our Black Onix Brick pizza oven. It gets wicked hot for a crispy crust, every time.</p>
             <h5 class="price">$11.99</h5>
             <a href="#" data-value="11.99" class="btn btn-primary addToOrder">ADD TO ORDER</a>
           </div>
@@ -80,16 +80,20 @@
           <img class="card-img-top" src="img/sandwich-egg.jpeg" alt="Card image cap">
           <div class="card-body">
             <h4 class="card-title">Gormet Burger</h4>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <h5 class="price">$12.99</h5>
-            <a href="#" data-value="12.99" class="btn btn-primary addToOrder">ADD TO ORDER</a>
+            <p class="card-text">
+              <blockquote class="blockquote">
+                <p class="mb-0">This is the BEST burger I have ever eaten in my life.</p>
+                <footer class="blockquote-footer">George Washington</footer>
+              </blockquote>
+              <h5 class="price">$12.99</h5>
+              <a href="#" data-value="12.99" class="btn btn-primary addToOrder">ADD TO ORDER</a>
           </div>
         </div>
         <div class="card" style="width: 20rem;">
           <img class="card-img-top" src="img/stirfry.jpeg" alt="Card image cap">
           <div class="card-body">
             <h4 class="card-title">Szechuan Stirfry</h4>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <p class="card-text">WOK WOK WOK WOK. Exotic flavors, szechuan magic. Take a journey around the world...from the comfort of your own home.</p>
             <h5 class="price">$11.99</h5>
             <a href="#" data-value="11.99" class="btn btn-primary addToOrder">ADD TO ORDER</a>
           </div>
@@ -98,7 +102,7 @@
           <img class="card-img-top" src="img/strawberry_basil.jpg" alt="Card image cap" height='238px'>
           <div class="card-body">
             <h4 class="card-title">Foraged Strawberry Basil Ice Cream</h4>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <p class="card-text">Only about 1 in 10 strawberries make the cut for the honor of hanging out with Peruvian Mountain Basil. Hint of enchantment.</p>
             <h5 class="price">$5.99</h5>
             <a href="#" data-value="5.99" class="btn btn-primary addToOrder">ADD TO ORDER</a>
           </div>
@@ -108,9 +112,7 @@
 
       <!-- shopping cart -->
       <div class="col-md-6 col-lg-4 col-sm-12">
-        <!-- <div class="row">
-          <h1 class="display-4">Order</h1>
-        </div> -->
+
         <table class="table table-hover">
           <thead>
             <!--class="thead-inverse" for dark bg?-->
@@ -137,8 +139,56 @@
             </tr>
           </tfoot>
         </table>
+
+        <!-- FORM SUBMITION -->
+        <div class="row form-row">
+          <form class="container" id='needs-validation' novalidate>
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="validationCustom01">First Name</label>
+                <input type="text" class="form-control address-input" name="validationCustom01" placeholder="First Name" required>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="validationCustom02">Last Name</label>
+                <input type="text" class="form-control address-input" name="validationCustom02" placeholder="Last Name" required>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12 mb-12">
+                <label for="address">Address</label>
+                <input type="text" class="form-control address-input" placeholder="Address" name="adress" required>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 md-3">
+                <label for="validationCustom03">City</label>
+                <input type="text" class="form-control address-input" name="validationCustom03" placeholder="City" required>
+                <div class="invalid-feedback">
+                  What city are we going to?
+                </div>
+              </div>
+              <div class="col-md-3 md-3">
+                <label for="validationCustom04">State</label>
+                <input type="text" class="form-control address-input" name="validaionCustom04" placeholder="Sate" required>
+                <div class="invalid-feedback">
+                  What state do we send your food?
+                </div>
+              </div>
+              <div class="col-md-3 md-3">
+                <label for="validationCustom05">Zip Code</label>
+                <input type="number" class="form-control address-input" placeholder="Zip" required>
+              </div>
+              <div class="invalid-feedback">
+                Please provide a valid zip code.
+              </div>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary pl-order-btn" name="place-order" style="margin:20px auto 20px auto"> Place Order</button>
+        </form>
+        <!-- FORM SUBMITION -->
       </div>
     </div>
+  </div>
   </div>
   <!-- MAIN SHOPPING CONTAINER -->
 

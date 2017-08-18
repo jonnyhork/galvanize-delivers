@@ -38,8 +38,6 @@
 
   .flex-container {
     max-height: calc(100vh - 180px);
-    /*display: flex;*/
-    /*flex-flow: row wrap;*/
     overflow-y: scroll;
   }
 
@@ -49,6 +47,19 @@
 
   .checkout-totals {
     padding-right: 40px;
+  }
+
+  .form-row {
+    margin: 70px 10px 30px auto;
+  }
+
+  .address-input {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid rgba(217, 104, 104, 0.86);
+    border-radius: 0;
+    margin: 5px;
   }
   /* Pulse Shrink */
 
