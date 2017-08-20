@@ -19,8 +19,12 @@
     padding-left: 30px;
   }
 
-  .home-tagline {
+  .home-tagline, .nav-link, .homeInfoText {
     font-family: "Bitter";
+  }
+
+  .homeInfoTitle {
+    font-family: "Vast Shadow";
   }
 
   .navbar {
@@ -31,10 +35,9 @@
     font-family: "Vast Shadow";
     font-size: 30px;
   }
-
-  .nav-link {
+  /*.nav-link, .homeInfoText {
     font-family: "Bitter";
-  }
+  }*/
 
   .bg-dark {
     background-color: #292c2f;
