@@ -14,12 +14,13 @@
   }
 
   .home-logo {
+    font-family: "Vast Shadow";
     font-size: 3.5rem;
     padding-left: 30px;
   }
 
   .home-tagline {
-    font-family: "roboto-bold";
+    font-family: "Bitter";
   }
 
   .navbar {
@@ -27,7 +28,12 @@
   }
 
   .navbar-brand {
+    font-family: "Vast Shadow";
     font-size: 30px;
+  }
+
+  .nav-link {
+    font-family: "Bitter";
   }
 
   .bg-dark {
@@ -52,6 +58,22 @@
 
   .card {
     margin: 10px auto 10px auto;
+  }
+
+  .card-title {
+    font-family: "Special Elite";
+  }
+
+  .co-text {
+    font-family: "Special Elite";
+  }
+
+  .card-text, .blockquote, label {
+    font-family: "Bitter";
+  }
+
+  h1.display-4 {
+    font-family: "Vast Shadow";
   }
 
   .checkout-totals {

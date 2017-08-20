@@ -13,7 +13,7 @@ $(document).ready(function() {
     let itemPriceText = $($(this).parents('.card-body').find(".price")).text()
     // ADDING TO THE ORDERED ITEMS LIST //
     $('.checkout-list').append(`<tr>
-      <td colspan='5'>${itemTitle}</td>
+      <td class = 'co-text' colspan='5'>${itemTitle}</td>
       <td>${itemPriceText}</td>
     </tr>`)
     // TOTALING THE ORDER //
