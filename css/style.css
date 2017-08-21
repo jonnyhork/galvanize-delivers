@@ -1,133 +1,160 @@
-  .bg-overlay {
-    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, -0.3)), url(/img/pizza-header.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    color: #fff;
-    height: 700px;
-    padding-top: 50px;
-  }
+.bg-overlay {
+  background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, -0.3)), url(/img/pizza-header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  color: #fff;
+  height: 700px;
+  padding-top: 50px;
+}
 
-  a.deco-none {
-    color: #f8f9fa;
-    text-decoration: none;
-  }
+a.deco-none {
+  color: #f8f9fa;
+  text-decoration: none;
+}
 
+.home-logo {
+  font-family: "Vast Shadow";
+  font-size: 3.5rem;
+  padding-left: 30px;
+}
+
+.faHome {
+  font-size: 30em;
+}
+
+@media (max-width: 480px) {
   .home-logo {
-    font-family: "Vast Shadow";
-    font-size: 3.5rem;
-    padding-left: 30px;
+    font-size: 2.2em;
   }
+  .faHome {
+    font-size: 20em;
+  }
+  .home-tagline {
+    font-size: 2em;
+  }
+}
 
-  .home-tagline, .nav-link, .homeInfoText {
-    font-family: "Bitter";
+@media (max-width: 767px) {
+  .home-tagline {
+    font-size: 2em;
   }
+}
 
-  .homeInfoTitle {
-    font-family: "Vast Shadow";
-  }
+.home-tagline, .nav-link, .homeInfoText {
+  font-family: "Bitter";
+}
 
-  .navbar {
-    height: 90px;
-  }
+.homeInfoTitle {
+  font-family: "Vast Shadow";
+}
 
-  .navbar-brand {
-    font-family: "Vast Shadow";
-    font-size: 30px;
-  }
-  /*.nav-link, .homeInfoText {
-    font-family: "Bitter";
-  }*/
+.navbar {
+  height: 90px;
+}
 
-  .bg-dark {
-    background-color: #292c2f;
-  }
+.navbar-brand {
+  font-family: "Vast Shadow";
+  font-size: 30px;
+}
 
-  .homeInfoSlide {
-    padding-top: 20%;
-    width: 400px;
-    height: 500px;
-  }
+.bg-dark {
+  background-color: #292c2f;
+}
 
-  .homeInfoIcon {
-    font-size: 7em;
-    margin-bottom: 10px;
-  }
+.homeInfoSlide {
+  padding-top: 20%;
+  width: 400px;
+  height: 500px;
+}
 
-  .flex-container {
-    max-height: calc(100vh - 180px);
-    overflow-y: scroll;
-  }
+.homeInfoIcon {
+  font-size: 7em;
+  margin-bottom: 10px;
+}
 
-  .card {
-    margin: 10px auto 10px auto;
-  }
+.flex-container {
+  max-height: calc(100vh - 180px);
+  overflow-y: scroll;
+}
 
-  .card-title {
-    font-family: "Special Elite";
-  }
+.card {
+  margin: 10px auto 10px auto;
+}
 
-  .co-text {
-    font-family: "Special Elite";
-  }
+.card-title {
+  font-family: "Special Elite";
+}
 
-  .card-text, .blockquote, label {
-    font-family: "Bitter";
-  }
+.co-text {
+  font-family: "Special Elite";
+}
 
-  h1.display-4 {
-    font-family: "Vast Shadow";
-  }
+.card-text, .blockquote, label {
+  font-family: "Bitter";
+}
 
-  .checkout-totals {
-    padding-right: 40px;
-  }
+h1.display-4 {
+  font-family: "Vast Shadow";
+}
 
-  .form-row {
-    margin: 70px 10px 30px auto;
+@media (max-width:770px) {
+  .order-title {
+    display: none;
   }
+}
 
-  .address-input {
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-bottom: 1px solid rgba(217, 104, 104, 0.86);
-    border-radius: 0;
-    margin: 5px;
-  }
-  /* Pulse Shrink */
+.checkout-totals {
+  padding-right: 40px;
+}
 
-  @-webkit-keyframes hvr-pulse-shrink {
-    to {
-      -webkit-transform: scale(0.9);
-      transform: scale(0.9);
-    }
-  }
+.form-row {
+  margin: 70px 10px 30px auto;
+}
 
-  @keyframes hvr-pulse-shrink {
-    to {
-      -webkit-transform: scale(0.9);
-      transform: scale(0.9);
-    }
-  }
+.address-input {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid rgba(217, 104, 104, 0.86);
+  border-radius: 0;
+  margin: 5px;
+}
 
-  .hvr-pulse-shrink {
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px transparent;
-  }
 
-  .hvr-pulse-shrink:hover, .hvr-pulse-shrink:focus, .hvr-pulse-shrink:active {
-    -webkit-animation-name: hvr-pulse-shrink;
-    animation-name: hvr-pulse-shrink;
-    -webkit-animation-duration: 0.3s;
-    animation-duration: 0.8s;
-    -webkit-animation-timing-function: linear;
-    animation-timing-function: linear;
-    -webkit-animation-iteration-count: infinite;
-    animation-iteration-count: infinite;
-    -webkit-animation-direction: alternate;
-    animation-direction: alternate;
+/* Pulse Shrink */
+
+@-webkit-keyframes hvr-pulse-shrink {
+  to {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
   }
+}
+
+@keyframes hvr-pulse-shrink {
+  to {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+
+.hvr-pulse-shrink {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+}
+
+.hvr-pulse-shrink:hover, .hvr-pulse-shrink:focus, .hvr-pulse-shrink:active {
+  -webkit-animation-name: hvr-pulse-shrink;
+  animation-name: hvr-pulse-shrink;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.8s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+}
